@@ -11,6 +11,8 @@ C_CYAN = (0, 128, 128)
 # E
 EVENT_ENEMY = pg.USEREVENT + 1
 
+EVENT_TIMEOUT = pg.USEREVENT + 2
+
 ENTITY_DAMAGE = {
     'Level1Bg0': 0,
     'Level1Bg1': 0,
@@ -65,6 +67,11 @@ ENTITY_SPEED = {
     'Level1Bg4': 4,
     'Level1Bg5': 5,
     'Level1Bg6': 6,
+    'Level2Bg0': 0,
+    'Level2Bg1': 1,
+    'Level2Bg2': 2,
+    'Level2Bg3': 3,
+    'Level2Bg4': 4,
     'Player1': 3,
     'Player1Shot': 3,
     'Player2': 3,
@@ -128,6 +135,28 @@ PLAYER_KEY_SHOOT = {'Player1': pg.K_RCTRL,
 # S
 SPAWN_TIME = 4000
 
+
+
+# T
+TIMEOUT_STEP = 100  # ms
+TIMEOUT_LEVEL = 10000  # ms
+
 # W
 WINDOW_WIDTH = 576
 WINDOW_HEIGHT = 324
+
+
+SCORE_POS = {'Title': (WINDOW_WIDTH / 2, 50),
+             'EnterName': (WINDOW_WIDTH / 2, 80),
+             'Label': (WINDOW_WIDTH / 2, 90),
+             'Name': (WINDOW_WIDTH / 2, 10),
+             0: (WINDOW_WIDTH / 2, 110),
+             1: (WINDOW_WIDTH / 2, 130),
+             2: (WINDOW_WIDTH / 2, 150),
+             3: (WINDOW_WIDTH / 2, 170),
+             4: (WINDOW_WIDTH / 2, 190),
+             5: (WINDOW_WIDTH / 2, 210),
+             6: (WINDOW_WIDTH / 2, 230),
+             7: (WINDOW_WIDTH / 2, 250),
+             8: (WINDOW_WIDTH / 2, 270),
+             9: (WINDOW_WIDTH / 2, 290)}
